@@ -1,0 +1,15 @@
+.text {
+    color: #0445a0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.postCard {
+    max-width: 30px;
+}
