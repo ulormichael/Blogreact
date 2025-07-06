@@ -23,18 +23,20 @@ function Home() {
         <div>
             <h1 className="text">Welcome to my blog</h1>
             <div className="container">
-                <div className="postcard">
-                    <img src="" alt="my blog post"></img>
-                    <h3>Post title</h3>
+            <button type="button" className="btn btn-success">Show me</button>
+                {posts.map((each_value) => (
+                <div key={each_value._id} className="postCard">
+                    <img src={each_value.image} alt="my blog post"></img>
+                    <h3>{each_value.title}</h3>
                 </div>
-                <div className="postcard">
-                    <img src="" alt="my blog post"></img>
-                    <h3>Post title</h3>
-                </div>
+                ))}
             </div>
         </div>
     )
 }
 
 export default Home;
-           
+
+// Note: How to create new react app
+// npx create-react-app blogreactapp or
+// npm create vite@latest blogreactapp
